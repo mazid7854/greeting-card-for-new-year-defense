@@ -152,7 +152,7 @@ function App() {
               className="w-full h-full object-cover"
             />
 
-            {/* FOOTER TEXT (Name + Designation) */}
+            {/* FOOTER TEXT (Name + Designation......) */}
             <div
               className="absolute left-1/2 sm:bottom-31 bottom-[52px]  w-[90%] transform -translate-x-1/2 z-10"
               style={{ color: "#000000" }}
