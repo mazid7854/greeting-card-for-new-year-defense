@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import greetingImage from "./assets/defence.jpg";
+import greetingImage from "./assets/22.jpg";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
@@ -35,13 +35,12 @@ function App() {
 
   return (
     <>
-      {/* bottom spacing (mb-5) for name + designation */}
       <style>{`
         .w-\\[90%] h2 { 
-          margin-bottom: 1.25rem;   /* mb-2 */
+          margin-bottom: 1.25rem;
         }
         .w-\\[90%] p { 
-          margin-bottom: 1.25rem;   /* mb-2 */
+          margin-bottom: 1.25rem;
         }
       `}</style>
 
@@ -153,12 +152,13 @@ function App() {
               className="w-full h-full object-cover"
             />
 
+            {/* FOOTER TEXT (Name + Designation) */}
             <div
-              className="absolute -space-y-1 top-1/2 left-1/2 w-[90%] text-center text-black transform -translate-x-1/2 -translate-y-1/2 z-10"
+              className="absolute left-1/2 bottom-31   w-[90%] transform -translate-x-1/2 z-10"
               style={{ color: "#000000" }}
             >
               <h2
-                className="font-bold text-start sm:mt-7 mt-5"
+                className="font-bold text-start"
                 style={{
                   fontSize: "clamp(18px, 2.5vw, 36px)",
                   color: "#1d4595",
@@ -169,7 +169,7 @@ function App() {
               </h2>
 
               <p
-                className="text-start sm:mb-16 mb-8 sm:text-xl text-sm -mt-1.5 sm:mt-0"
+                className="text-start sm:text-xl text-sm mt-1"
                 style={{
                   color: "#1f2937",
                   fontWeight: "600",
